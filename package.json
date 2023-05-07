@@ -1,0 +1,19 @@
+{
+  "name": "ribbon.io-landing-page",
+  "version": "1.0.0",
+  "description": "A modern landing page for a browser extension called ribbon.",
+  "main": "index.js",
+  "scripts": {
+    "tailwind:build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --minify",
+    "tailwind:watch": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch",
+    "tsc:watch": "tsc --watch ",
+    "tsc:build": "tsc -pretty"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2",
+    "typescript": "^5.0.4"
+  }
+}
