@@ -18,7 +18,7 @@
     <!-- HEADER -->
     <header
       id="header"
-      class="container py-10 h-[100vh] border-2 border-white bg-opacity-90 lg:bg-transparent lg:border-none lg:h-full"
+      class="container py-10 border-2 border-white bg-opacity-90 lg:bg-transparent lg:border-none"
     >
       <nav class="flex justify-between items-center px-3 relative">
         <!-- logo -->
@@ -95,6 +95,59 @@
         </button>
       </nav>
     </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="container py-10 mt-16">
+        <div
+          class="flex flex-col gap-16 md:flex-row-reverse md:gap-4 md:justify-between"
+        >
+          <!-- Hero Image -->
+          <article class="md:w-2/3">
+            <img
+              src="./images/illustration-hero.svg"
+              alt=""
+              class="md:-mt-8 lg:-mt-14"
+            />
+          </article>
+
+          <!-- Hero Content -->
+          <article class="flex flex-col gap-y-8 px-3">
+            <div
+              class="flex flex-col items-center gap-6 text-center md:items-start md:text-start"
+            >
+              <h1
+                class="text-3xl text-VeryDarkBlue leading-snug font-bold max-w-sm"
+              >
+                A Simple Bookmark Manager
+              </h1>
+              <p
+                class="text-GrayishBlue leading-relaxed max-w-[19rem] md:text-md md:max-w-[30rem] lg:max-w-[35rem]"
+              >
+                A clean and simple interface to organize your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free.
+              </p>
+            </div>
+
+            <div
+              class="flex items-center justify-center gap-2 md:justify-start md:gap-4"
+            >
+              <button
+                class="rounded-md shadow-md p-3 bg-SoftBlue text-white text-center font-semibold border-2 border-white hover:outline-none hover:border-2 hover:bg-white hover:text-GrayishBlue hover:border-GrayishBlue"
+              >
+                Get it on Chrome
+              </button>
+              <button
+                class="rounded-md shadow-md p-3 bg-white text-GrayishBlue text-center font-semibold border-2 border-white hover:outline-none hover:border-2 hover:border-GrayishBlue"
+              >
+                Get it on Firefox
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <!-- Ionicons -->
     <script
