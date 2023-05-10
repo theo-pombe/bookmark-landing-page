@@ -28,7 +28,6 @@ questions.forEach((question, index) => {
 });
 
 // Features navigation tabs
-
 const tab_btns = document.querySelectorAll(
   "#tab_btn"
 ) as NodeListOf<HTMLButtonElement>;
@@ -59,4 +58,22 @@ tab_btns.forEach((tab, index) => {
     features[index].classList.remove("hidden");
     features[index].classList.add("flex");
   });
+});
+
+// CTA Form Error Handling
+const ctaFrom = document.getElementById("cta-form") as HTMLFormElement;
+
+// cta-form
+ctaFrom.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const ctaInput = document.getElementById("cta-input") as HTMLInputElement;
+  // const value: string = ctaInput.value;
+
+  // validate invalid email using regular
+  const error = document.querySelector(".error") as HTMLParagraphElement;
+  error.textContent = "Whoops, make sure it's an email";
+
+  const container = ctaInput.parentElement as HTMLDivElement;
+  container.classList.add("is-error");
 });

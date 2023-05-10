@@ -41,4 +41,13 @@ tab_btns.forEach((tab, index) => {
         features[index].classList.add("flex");
     });
 });
+const ctaFrom = document.getElementById("cta-form");
+ctaFrom.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const ctaInput = document.getElementById("cta-input");
+    const error = document.querySelector(".error");
+    error.textContent = "Whoops, make sure it's an email";
+    const container = ctaInput.parentElement;
+    container.classList.add("is-error");
+});
 //# sourceMappingURL=index.js.map
