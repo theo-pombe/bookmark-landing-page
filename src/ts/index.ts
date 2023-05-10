@@ -26,3 +26,37 @@ questions.forEach((question, index) => {
     chevronIcons[index].classList.toggle("rotate-180");
   });
 });
+
+// Features navigation tabs
+
+const tab_btns = document.querySelectorAll(
+  "#tab_btn"
+) as NodeListOf<HTMLButtonElement>;
+const features = document.querySelectorAll(
+  "#feature"
+) as NodeListOf<HTMLDivElement>;
+
+tab_btns.forEach((tab, index) => {
+  tab.addEventListener("click", () => {
+    tab_btns.forEach((tab) => {
+      tab.classList.remove("text-VeryDarkBlue");
+      tab.classList.remove("border-b-4");
+      tab.classList.remove("border-SoftRed");
+      tab.classList.add("text-GrayishBlue");
+      tab.classList.add("hover:text-SoftRed");
+    });
+
+    features.forEach((feature) => {
+      feature.classList.add("hidden");
+    });
+
+    tab.classList.add("text-VeryDarkBlue");
+    tab.classList.add("border-b-4");
+    tab.classList.add("border-SoftRed");
+    tab.classList.remove("text-GrayishBlue");
+    tab.classList.remove("hover:text-SoftRed");
+
+    features[index].classList.remove("hidden");
+    features[index].classList.add("flex");
+  });
+});
