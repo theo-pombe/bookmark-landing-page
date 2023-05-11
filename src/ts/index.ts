@@ -64,16 +64,29 @@ tab_btns.forEach((tab, index) => {
 const ctaFrom = document.getElementById("cta-form") as HTMLFormElement;
 
 // cta-form
-ctaFrom.addEventListener("submit", (e) => {
+ctaFrom.addEventListener("submit", (e: SubmitEvent) => {
   e.preventDefault();
 
   const ctaInput = document.getElementById("cta-input") as HTMLInputElement;
-  // const value: string = ctaInput.value;
+  const parentContainer = ctaInput.parentElement as HTMLDivElement;
 
-  // validate invalid email using regular
-  const error = document.querySelector(".error") as HTMLParagraphElement;
-  error.textContent = "Whoops, make sure it's an email";
+  const inputValue: string = ctaInput.value;
 
-  const container = ctaInput.parentElement as HTMLDivElement;
-  container.classList.add("is-error");
+  // Define a regular expression for validating email address
+  let validRegex =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  // Check if the input value matches with regular expression
+  if (inputValue.match(validRegex)) {
+    parentContainer.classList.remove("is-error");
+  } else {
+    const error = document.querySelector(".error") as HTMLParagraphElement;
+
+    parentContainer.classList.add("is-error");
+    error.textContent = "Whoops, make sure it's an email";
+
+    setTimeout(() => {
+      parentContainer.classList.remove("is-error");
+    }, 3000);
+  }
 });

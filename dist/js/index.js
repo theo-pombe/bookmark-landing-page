@@ -45,9 +45,19 @@ const ctaFrom = document.getElementById("cta-form");
 ctaFrom.addEventListener("submit", (e) => {
     e.preventDefault();
     const ctaInput = document.getElementById("cta-input");
-    const error = document.querySelector(".error");
-    error.textContent = "Whoops, make sure it's an email";
-    const container = ctaInput.parentElement;
-    container.classList.add("is-error");
+    const parentContainer = ctaInput.parentElement;
+    const inputValue = ctaInput.value;
+    let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (inputValue.match(validRegex)) {
+        parentContainer.classList.remove("is-error");
+    }
+    else {
+        const error = document.querySelector(".error");
+        parentContainer.classList.add("is-error");
+        error.textContent = "Whoops, make sure it's an email";
+        setTimeout(() => {
+            parentContainer.classList.remove("is-error");
+        }, 3000);
+    }
 });
 //# sourceMappingURL=index.js.map
