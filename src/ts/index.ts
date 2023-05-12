@@ -27,19 +27,23 @@ const chevronIcons = document.querySelectorAll(
 
 questions.forEach((question, index) => {
   question.addEventListener("click", () => {
+    questions.forEach((question) => {
+      question.classList.add("hover:text-SoftRed");
+    });
     answers.forEach((answer) => {
       answer.classList.add("hidden");
     });
     chevronIcons.forEach((icon) => {
-      icon.classList.remove("rotate-180");
-      icon.classList.remove("text-SoftRed");
       icon.classList.add("text-SoftBlue");
+      icon.classList.remove("text-SoftRed");
+      icon.classList.remove("rotate-180");
     });
 
-    answers[index].classList.toggle("hidden");
-    chevronIcons[index].classList.toggle("text-SoftRed");
-    chevronIcons[index].classList.toggle("text-SoftBlue");
-    chevronIcons[index].classList.toggle("rotate-180");
+    question.classList.remove("hover:text-SoftRed");
+    answers[index].classList.remove("hidden");
+    chevronIcons[index].classList.remove("text-SoftBlue");
+    chevronIcons[index].classList.add("text-SoftRed");
+    chevronIcons[index].classList.add("rotate-180");
   });
 });
 

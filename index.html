@@ -113,9 +113,11 @@
     <!-- MAIN -->
     <main class="group-[.is-mobile]:pt-28">
       <!-- Hero Section -->
-      <section class="container py-10 lg:mt-16">
+      <section
+        class="container py-10 lg:mt-16 overflow-hidden xl:overflow-visible"
+      >
         <div
-          class="flex flex-col gap-16 md:flex-row-reverse md:gap-4 md:justify-between"
+          class="flex flex-col gap-16 md:flex-row-reverse md:gap-4 md:justify-between relative"
         >
           <!-- Hero Image -->
           <article class="md:w-2/3">
@@ -124,6 +126,10 @@
               alt=""
               class="md:-mt-8 lg:-mt-14"
             />
+
+            <div
+              class="bg-SoftBlue rounded-l-full h-48 w-96 absolute top-16 -right-24 -z-10 lg:h-60 lg:w-1/2 xl:w-[60%] xl:-right-52"
+            ></div>
           </article>
 
           <!-- Hero Content -->
@@ -149,12 +155,12 @@
               class="flex items-center justify-center gap-4 md:justify-start"
             >
               <button
-                class="rounded-md shadow-md px-2 py-3 bg-SoftBlue text-white text-center font-medium border-2 border-white hover:outline-none hover:border-2 hover:bg-white hover:text-GrayishBlue hover:border-GrayishBlue md:p-3"
+                class="rounded-md shadow-md px-2 py-3 bg-SoftBlue text-white text-center font-medium border-2 border-transparent hover:outline-none hover:border-2 hover:bg-white hover:text-SoftBlue hover:border-GrayishBlue md:p-3"
               >
                 Get it on Chrome
               </button>
               <button
-                class="rounded-md shadow-md px-2 py-3 bg-white text-GrayishBlue text-center font-medium border-2 border-white hover:outline-none hover:border-2 hover:border-GrayishBlue md:p-3"
+                class="rounded-md shadow-md px-2 py-3 bg-white text-GrayishBlue text-center font-medium border-2 border-transparent hover:outline-none hover:border-2 hover:border-GrayishBlue md:p-3"
               >
                 Get it on Firefox
               </button>
@@ -214,10 +220,14 @@
           <!-- Feature 1 -->
           <article
             id="feature"
-            class="flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between"
+            class="flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
             <div class="md:w-1/2 lg:-mt-14">
               <img src="./images/illustration-features-tab-1.svg" alt="" />
+
+              <div
+                class="bg-SoftBlue rounded-r-full h-48 w-96 absolute top-10 -left-32 -z-10 lg:h-64 lg:w-[55%] lg:top-12 xl:w-2/3 xl:-left-56"
+              ></div>
             </div>
 
             <div
@@ -244,10 +254,14 @@
           <!-- Feature 2 -->
           <article
             id="feature"
-            class="hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between"
+            class="hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
             <div class="md:w-1/2 lg:-mt-14">
               <img src="./images/illustration-features-tab-2.svg" alt="" />
+
+              <div
+                class="bg-SoftBlue rounded-r-full h-48 w-96 absolute top-16 -left-32 -z-10 md:top-20 lg:h-64 lg:w-[55%] lg:top-28 xl:w-2/3 xl:-left-56"
+              ></div>
             </div>
 
             <div
@@ -273,10 +287,14 @@
           <!-- Feature 3 -->
           <article
             id="feature"
-            class="hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between"
+            class="hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
             <div class="md:w-1/2 lg:-mt-14">
               <img src="./images/illustration-features-tab-3.svg" alt="" />
+
+              <div
+                class="bg-SoftBlue rounded-r-full h-48 w-96 absolute top-16 -left-32 -z-10 md:top-20 lg:h-64 lg:w-[55%] lg:top-28 xl:w-2/3 xl:-left-56"
+              ></div>
             </div>
 
             <div
@@ -445,9 +463,9 @@
               <!-- Question 1 -->
               <dt
                 id="question"
-                class="py-6 flex justify-between items-center cursor-pointer"
+                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
-                <span class="text-VeryDarkBlue">What is Bookmark?</span>
+                <span>What is Bookmark?</span>
                 <ion-icon
                   id="chevron-icon"
                   name="chevron-down-outline"
@@ -473,11 +491,9 @@
               <!-- Question 2 -->
               <dt
                 id="question"
-                class="py-6 flex justify-between items-center cursor-pointer"
+                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
-                <span class="text-VeryDarkBlue"
-                  >How can I request a new browser?</span
-                >
+                <span>How can I request a new browser?</span>
                 <ion-icon
                   id="chevron-icon"
                   name="chevron-down-outline"
@@ -507,9 +523,9 @@
               <!-- Question 3 -->
               <dt
                 id="question"
-                class="py-6 flex justify-between items-center cursor-pointer"
+                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
-                <span class="text-VeryDarkBlue">Is there a mobile app?</span>
+                <span>Is there a mobile app?</span>
                 <ion-icon
                   id="chevron-icon"
                   name="chevron-down-outline"
@@ -536,11 +552,9 @@
               <!-- Question 4 -->
               <dt
                 id="question"
-                class="py-6 flex justify-between items-center cursor-pointer"
+                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
-                <span class="text-VeryDarkBlue"
-                  >What about other Chromium browsers?</span
-                >
+                <span>What about other Chromium browsers?</span>
                 <ion-icon
                   id="chevron-icon"
                   name="chevron-down-outline"
@@ -656,6 +670,22 @@
           <img src="./images/icon-twitter.svg" alt="" />
         </div>
       </article>
+
+      <p class="text-xs text-center text-gray inline-block w-full mx-auto mt-8">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="italic text-SoftBlue hover:text-SoftRed visited:text-white"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/theo-pombe"
+          target="_blank"
+          class="italic text-SoftRed hover:text-SoftBlue visited:text-white"
+          >Theo Pombe</a
+        >.
+      </p>
     </footer>
 
     <!-- Ionicons -->

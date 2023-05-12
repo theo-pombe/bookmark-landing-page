@@ -2,12 +2,7 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {
-      screens: {
-        mobile: "375px",
-        desktop: "1440px",
-      },
-    },
+    extend: {},
     fontFamily: { Rubik: ["Rubik, sans-serif"] },
     container: {
       center: true,
