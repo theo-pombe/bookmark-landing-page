@@ -1,4 +1,14 @@
 "use strict";
+const menuBtn = document.querySelector("#humberger-menu");
+menuBtn.addEventListener("click", () => {
+    const bodyOnMobile = document.querySelector("body");
+    bodyOnMobile.classList.toggle("is-mobile");
+    const menuIcons = document.querySelectorAll("#menu-icon");
+    menuIcons.forEach((icon) => {
+        icon.classList.toggle("bg-black");
+        icon.classList.toggle("bg-white");
+    });
+});
 const answers = document.querySelectorAll("#answer");
 const questions = document.querySelectorAll("#question");
 const chevronIcons = document.querySelectorAll("#chevron-icon");

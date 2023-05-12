@@ -1,3 +1,19 @@
+// NAV MENU
+const menuBtn = document.querySelector("#humberger-menu") as HTMLButtonElement;
+
+menuBtn.addEventListener("click", () => {
+  const bodyOnMobile = document.querySelector("body") as HTMLBodyElement;
+  bodyOnMobile.classList.toggle("is-mobile");
+
+  const menuIcons = document.querySelectorAll(
+    "#menu-icon"
+  ) as NodeListOf<HTMLSpanElement>;
+  menuIcons.forEach((icon) => {
+    icon.classList.toggle("bg-black");
+    icon.classList.toggle("bg-white");
+  });
+});
+
 // FAQ Accordion
 const answers = document.querySelectorAll(
   "#answer"
@@ -63,7 +79,6 @@ tab_btns.forEach((tab, index) => {
 // CTA Form Error Handling
 const ctaFrom = document.getElementById("cta-form") as HTMLFormElement;
 
-// cta-form
 ctaFrom.addEventListener("submit", (e: SubmitEvent) => {
   e.preventDefault();
 

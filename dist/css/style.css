@@ -566,6 +566,90 @@ video {
   top: 5rem;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.bottom-10{
+  bottom: 2.5rem;
+}
+
+.bottom-1{
+  bottom: 0.25rem;
+}
+
+.bottom-20{
+  bottom: 5rem;
+}
+
+.-bottom-20{
+  bottom: -5rem;
+}
+
+.-bottom-1{
+  bottom: -0.25rem;
+}
+
+.-bottom-10{
+  bottom: -2.5rem;
+}
+
+.bottom-2{
+  bottom: 0.5rem;
+}
+
+.bottom-1\/2{
+  bottom: 50%;
+}
+
+.right-3{
+  right: 0.75rem;
+}
+
+.left-3{
+  left: 0.75rem;
+}
+
+.-bottom-16{
+  bottom: -4rem;
+}
+
+.-bottom-56{
+  bottom: -14rem;
+}
+
+.-bottom-9{
+  bottom: -2.25rem;
+}
+
+.-bottom-96{
+  bottom: -24rem;
+}
+
+.-bottom-\[30rem\]{
+  bottom: -30rem;
+}
+
+.-bottom-\[25rem\]{
+  bottom: -25rem;
+}
+
+.-bottom-\[26rem\]{
+  bottom: -26rem;
+}
+
+.-bottom-11{
+  bottom: -2.75rem;
+}
+
+.-bottom-full{
+  bottom: -100%;
+}
+
 .m-1{
   margin: 0.25rem;
 }
@@ -573,6 +657,11 @@ video {
 .mx-7{
   margin-left: 1.75rem;
   margin-right: 1.75rem;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-0{
@@ -623,6 +712,18 @@ video {
   margin-top: 2rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mt-5{
+  margin-top: 1.25rem;
+}
+
+.mt-56{
+  margin-top: 14rem;
+}
+
 .block{
   display: block;
 }
@@ -647,12 +748,48 @@ video {
   height: 0.75rem;
 }
 
+.h-\[100vd\]{
+  height: 100vd;
+}
+
+.h-\[100v\]{
+  height: 100v;
+}
+
+.h-\[100vh\]{
+  height: 100vh;
+}
+
 .w-6{
   width: 1.5rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-9{
+  width: 2.25rem;
+}
+
+.w-11{
+  width: 2.75rem;
+}
+
+.w-10\/12{
+  width: 83.333333%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
+.w-1{
+  width: 0.25rem;
+}
+
+.w-11\/12{
+  width: 91.666667%;
 }
 
 .min-w-\[300px\]{
@@ -693,6 +830,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -748,6 +889,22 @@ video {
   row-gap: 2rem;
 }
 
+.gap-y-5{
+  row-gap: 1.25rem;
+}
+
+.gap-y-52{
+  row-gap: 13rem;
+}
+
+.gap-y-16{
+  row-gap: 4rem;
+}
+
+.gap-y-12{
+  row-gap: 3rem;
+}
+
 .space-y-10 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -770,6 +927,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .overflow-x-hidden{
@@ -928,8 +1089,33 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-5{
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
+}
+
+.pt-56{
+  padding-top: 14rem;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
+}
+
+.pt-2{
+  padding-top: 0.5rem;
+}
+
+.pt-28{
+  padding-top: 7rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
 }
 
 .text-center{
@@ -1093,11 +1279,35 @@ video {
   outline-offset: 2px;
 }
 
+.group.is-mobile .group-\[\.is-mobile\]\:absolute{
+  position: absolute;
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:top-0{
+  top: 0px;
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:bottom-0{
+  bottom: 0px;
+}
+
 .group.is-error .group-\[\.is-error\]\:block{
   display: block;
 }
 
+.group.is-mobile .group-\[\.is-mobile\]\:block{
+  display: block;
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:flex{
+  display: flex;
+}
+
 .group.is-open .group-\[\.is-open\]\:hidden{
+  display: none;
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:hidden{
   display: none;
 }
 
@@ -1126,14 +1336,40 @@ video {
   border-bottom-left-radius: 0px;
 }
 
+.group.is-mobile .group-\[\.is-mobile\]\:border-2{
+  border-width: 2px;
+}
+
 .group.is-error .group-\[\.is-error\]\:border-SoftRed{
   --tw-border-opacity: 1;
   border-color: hsl(0 94% 66% / var(--tw-border-opacity));
 }
 
+.group.is-mobile .group-\[\.is-mobile\]\:border-white{
+  --tw-border-opacity: 1;
+  border-color: rgb(250 250 250 / var(--tw-border-opacity));
+}
+
 .group.is-open .group-\[\.is-open\]\:bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:bg-VeryDarkBlue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:bg-opacity-80{
+  --tw-bg-opacity: 0.8;
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:bg-opacity-90{
+  --tw-bg-opacity: 0.9;
+}
+
+.group.is-mobile .group-\[\.is-mobile\]\:pt-28{
+  padding-top: 7rem;
 }
 
 @media (min-width: 768px){
@@ -1309,6 +1545,10 @@ video {
 
   .lg\:mt-16{
     margin-top: 4rem;
+  }
+
+  .lg\:block{
+    display: block;
   }
 
   .lg\:flex{
