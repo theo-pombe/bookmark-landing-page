@@ -1681,6 +1681,26 @@ video {
     --tw-text-opacity: 1;
     color: hsl(0 94% 66% / var(--tw-text-opacity));
   }
+
+  .group.is-mobile .group-\[\.is-mobile\]\:lg\:relative{
+    position: relative;
+  }
+
+  .group.is-mobile .lg\:group-\[\.is-mobile\]\:relative{
+    position: relative;
+  }
+
+  .group.is-mobile .lg\:group-\[\.is-mobile\]\:block{
+    display: block;
+  }
+
+  .group.is-mobile .lg\:group-\[\.is-mobile\]\:hidden{
+    display: none;
+  }
+
+  .group.is-mobile .lg\:group-\[\.is-mobile\]\:bg-transparent{
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 1280px){
