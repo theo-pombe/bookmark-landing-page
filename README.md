@@ -79,6 +79,7 @@ For this challenge:
 Some of the areas that I wish to continue focusing on in future projects are:-
 
 - CSS Positioning
+- Animations
 - Responsive Design techniques
 
 ### Useful resources
