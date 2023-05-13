@@ -3,15 +3,15 @@ const menuBtn = document.querySelector("#humberger-menu");
 menuBtn.addEventListener("click", () => {
     const bodyOnMobile = document.querySelector("body");
     bodyOnMobile.classList.toggle("is-mobile");
-    const menuIcons = document.querySelectorAll("#menu-icon");
+    const menuIcons = document.querySelectorAll(".menu-icon");
     menuIcons.forEach((icon) => {
         icon.classList.toggle("bg-black");
         icon.classList.toggle("bg-white");
     });
 });
-const answers = document.querySelectorAll("#answer");
-const questions = document.querySelectorAll("#question");
-const chevronIcons = document.querySelectorAll("#chevron-icon");
+const answers = document.querySelectorAll(".answer");
+const questions = document.querySelectorAll(".question");
+const chevronIcons = document.querySelectorAll(".chevron-icon");
 questions.forEach((question, index) => {
     question.addEventListener("click", () => {
         questions.forEach((question) => {
@@ -32,8 +32,8 @@ questions.forEach((question, index) => {
         chevronIcons[index].classList.add("rotate-180");
     });
 });
-const tab_btns = document.querySelectorAll("#tab_btn");
-const features = document.querySelectorAll("#feature");
+const tab_btns = document.querySelectorAll(".tab_btn");
+const features = document.querySelectorAll(".feature");
 tab_btns.forEach((tab, index) => {
     tab.addEventListener("click", () => {
         tab_btns.forEach((tab) => {
