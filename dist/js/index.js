@@ -55,23 +55,29 @@ tab_btns.forEach((tab, index) => {
         features[index].classList.add("flex");
     });
 });
-const ctaFrom = document.getElementById("cta-form");
-ctaFrom.addEventListener("submit", (e) => {
+const newsletterFrom = document.getElementById("newsletter-form");
+newsletterFrom.addEventListener("submit", (e) => {
     e.preventDefault();
-    const ctaInput = document.getElementById("cta-input");
-    const parentContainer = ctaInput.parentElement;
-    const inputValue = ctaInput.value;
+    const newsletterInput = document.getElementById("newsletter-input");
+    const parentContainer = newsletterInput.parentElement;
+    const inputValue = newsletterInput.value;
     let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (inputValue.match(validRegex)) {
-        parentContainer.classList.remove("is-error");
+    const messageContainer = document.querySelector(".error");
+    if (!inputValue) {
+        handleAlertMessages(parentContainer, "is-error", "Whoops, make sure it's not empty", messageContainer);
+        return;
     }
-    else {
-        const error = document.querySelector(".error");
-        parentContainer.classList.add("is-error");
-        error.textContent = "Whoops, make sure it's an email";
-        setTimeout(() => {
-            parentContainer.classList.remove("is-error");
-        }, 3000);
+    if (!inputValue.match(validRegex)) {
+        handleAlertMessages(parentContainer, "is-error", "Whoops, make sure it's an email", messageContainer);
+        return;
     }
+    handleAlertMessages(parentContainer, "is-success", "Thank you for subscribing", messageContainer);
 });
+function handleAlertMessages(parentContainer, className, message, messageContainer) {
+    parentContainer.classList.add(className);
+    messageContainer.textContent = `${message}`;
+    setTimeout(() => {
+        parentContainer.classList.remove(className);
+    }, 3000);
+}
 //# sourceMappingURL=index.js.map

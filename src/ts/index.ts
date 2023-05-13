@@ -80,32 +80,72 @@ tab_btns.forEach((tab, index) => {
   });
 });
 
-// CTA Form Error Handling
-const ctaFrom = document.getElementById("cta-form") as HTMLFormElement;
+// newsletter Form Handling
+const newsletterFrom = document.getElementById(
+  "newsletter-form"
+) as HTMLFormElement;
 
-ctaFrom.addEventListener("submit", (e: SubmitEvent) => {
+newsletterFrom.addEventListener("submit", (e: SubmitEvent) => {
   e.preventDefault();
 
-  const ctaInput = document.getElementById("cta-input") as HTMLInputElement;
-  const parentContainer = ctaInput.parentElement as HTMLDivElement;
+  const newsletterInput = document.getElementById(
+    "newsletter-input"
+  ) as HTMLInputElement;
+  const parentContainer = newsletterInput.parentElement as HTMLDivElement;
 
-  const inputValue: string = ctaInput.value;
+  const inputValue: string = newsletterInput.value;
 
   // Define a regular expression for validating email address
   let validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  // Check if the input value matches with regular expression
-  if (inputValue.match(validRegex)) {
-    parentContainer.classList.remove("is-error");
-  } else {
-    const error = document.querySelector(".error") as HTMLParagraphElement;
+  const messageContainer = document.querySelector(
+    ".error"
+  ) as HTMLParagraphElement;
 
-    parentContainer.classList.add("is-error");
-    error.textContent = "Whoops, make sure it's an email";
+  // Check if the input value is empty
+  if (!inputValue) {
+    handleAlertMessages(
+      parentContainer,
+      "is-error",
+      "Whoops, make sure it's not empty",
+      messageContainer
+    );
 
-    setTimeout(() => {
-      parentContainer.classList.remove("is-error");
-    }, 3000);
+    return;
   }
+
+  // Check if the input value matches with regular expression
+  if (!inputValue.match(validRegex)) {
+    handleAlertMessages(
+      parentContainer,
+      "is-error",
+      "Whoops, make sure it's an email",
+      messageContainer
+    );
+
+    return;
+  }
+
+  // Handle the form submition here
+  handleAlertMessages(
+    parentContainer,
+    "is-success",
+    "Thank you for subscribing",
+    messageContainer
+  );
 });
+
+function handleAlertMessages(
+  parentContainer: HTMLDivElement,
+  className: string,
+  message: string,
+  messageContainer: HTMLParagraphElement
+) {
+  parentContainer.classList.add(className);
+  messageContainer.textContent = `${message}`;
+
+  setTimeout(() => {
+    parentContainer.classList.remove(className);
+  }, 3000);
+}
