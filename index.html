@@ -24,13 +24,11 @@
         <!-- logo -->
         <div>
           <img
-            id="logo"
             class="block group-[.is-mobile]:hidden lg:group-[.is-mobile]:block"
             src="./images/logo-bookmark.svg"
             alt=""
           />
           <img
-            id="logo"
             class="hidden group-[.is-mobile]:block lg:group-[.is-mobile]:hidden"
             src="./images/logo-bookmark-light.svg"
             alt=""
@@ -95,16 +93,13 @@
           class="group flex flex-col gap-y-1 lg:hidden"
         >
           <span
-            id="menu-icon"
-            class="block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:rotate-45 group-[.is-open]:translate-y-1 group-[.is-open]:bg-white"
+            class="menu-icon block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:rotate-45 group-[.is-open]:translate-y-1 group-[.is-open]:bg-white"
           ></span>
           <span
-            id="menu-icon"
-            class="block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:hidden"
+            class="menu-icon block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:hidden"
           ></span>
           <span
-            id="menu-icon"
-            class="block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:-rotate-45 group-[.is-open]:-translate-y-1 group-[.is-open]:bg-white"
+            class="menu-icon block bg-black bg-opacity-80 w-6 h-1 group-[.is-open]:-rotate-45 group-[.is-open]:-translate-y-1 group-[.is-open]:bg-white"
           ></span>
         </button>
       </nav>
@@ -120,7 +115,7 @@
           class="flex flex-col gap-16 md:flex-row-reverse md:gap-4 md:justify-between relative"
         >
           <!-- Hero Image -->
-          <article class="md:w-2/3">
+          <div class="md:w-2/3">
             <img
               src="./images/illustration-hero.svg"
               alt=""
@@ -130,7 +125,7 @@
             <div
               class="bg-SoftBlue rounded-l-full h-48 w-96 absolute top-16 -right-24 -z-10 lg:h-60 lg:w-1/2 xl:w-[60%] xl:-right-52"
             ></div>
-          </article>
+          </div>
 
           <!-- Hero Content -->
           <article class="flex flex-col gap-y-8 px-3">
@@ -190,24 +185,21 @@
               class="border-b border-b-gray border-t border-t-gray md:border-t-0"
             >
               <button
-                id="tab_btn"
-                class="inline-block py-4 text-lg md:px-6 text-VeryDarkBlue border-b-4 border-SoftRed"
+                class="tab_btn inline-block py-4 text-lg md:px-6 text-VeryDarkBlue border-b-4 border-SoftRed"
               >
                 Simple Bookmarking
               </button>
             </li>
             <li class="border-b border-b-gray">
               <button
-                id="tab_btn"
-                class="inline-block py-4 text-lg md:px-6 text-GrayishBlue hover:text-SoftRed"
+                class="tab_btn inline-block py-4 text-lg md:px-6 text-GrayishBlue hover:text-SoftRed"
               >
                 Speedy Searching
               </button>
             </li>
             <li class="border-b border-b-gray">
               <button
-                id="tab_btn"
-                class="inline-block py-4 text-lg md:px-6 text-GrayishBlue hover:text-SoftRed"
+                class="tab_btn inline-block py-4 text-lg md:px-6 text-GrayishBlue hover:text-SoftRed"
               >
                 Easy Sharing
               </button>
@@ -219,8 +211,7 @@
         <div class="px-8">
           <!-- Feature 1 -->
           <article
-            id="feature"
-            class="flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
+            class="feature flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
             <div class="md:w-1/2 lg:-mt-14">
               <img src="./images/illustration-features-tab-1.svg" alt="" />
@@ -253,8 +244,7 @@
 
           <!-- Feature 2 -->
           <article
-            id="feature"
-            class="hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
+            class="feature hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
             <div class="md:w-1/2 lg:-mt-14">
               <img src="./images/illustration-features-tab-2.svg" alt="" />
@@ -286,8 +276,7 @@
 
           <!-- Feature 3 -->
           <article
-            id="feature"
-            class="hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
+            class="feature hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
             <div class="md:w-1/2 lg:-mt-14">
               <img src="./images/illustration-features-tab-3.svg" alt="" />
@@ -462,22 +451,17 @@
             <dl class="border-b border-b-gray mx-7">
               <!-- Question 1 -->
               <dt
-                id="question"
-                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
                 <span>What is Bookmark?</span>
                 <ion-icon
-                  id="chevron-icon"
                   name="chevron-down-outline"
-                  class="text-SoftBlue"
+                  class="chevron-icon text-SoftBlue"
                   style="font-size: 24px"
                 ></ion-icon>
               </dt>
               <!-- Answer 1 -->
-              <dd
-                id="answer"
-                class="hidden text-GrayishBlue leading-loose pb-8"
-              >
+              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 tincidunt justo eget ultricies fringilla. Phasellus blandit
                 ipsum quis quam ornare mattis.
@@ -490,23 +474,18 @@
             <dl class="border-b border-b-gray mx-7">
               <!-- Question 2 -->
               <dt
-                id="question"
-                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
                 <span>How can I request a new browser?</span>
                 <ion-icon
-                  id="chevron-icon"
                   name="chevron-down-outline"
-                  class="text-SoftBlue"
+                  class="chevron-icon text-SoftBlue"
                   style="font-size: 24px"
                 ></ion-icon>
               </dt>
 
               <!-- Answer 2 -->
-              <dd
-                id="answer"
-                class="hidden text-GrayishBlue leading-loose pb-8"
-              >
+              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
                 massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
                 luctus eros aliquet convallis ultricies. Mauris augue massa,
@@ -522,22 +501,17 @@
             <dl class="border-b border-b-gray mx-7">
               <!-- Question 3 -->
               <dt
-                id="question"
-                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
                 <span>Is there a mobile app?</span>
                 <ion-icon
-                  id="chevron-icon"
                   name="chevron-down-outline"
-                  class="text-SoftBlue"
+                  class="chevron-icon text-SoftBlue"
                   style="font-size: 24px"
                 ></ion-icon>
               </dt>
               <!-- Answer 3 -->
-              <dd
-                id="answer"
-                class="hidden text-GrayishBlue leading-loose pb-8"
-              >
+              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
                 Sed consectetur quam id neque fermentum accumsan. Praesent
                 luctus vestibulum dolor, ut condimentum urna vulputate eget.
                 Cras in ligula quis est pharetra mattis sit amet pharetra purus.
@@ -551,22 +525,17 @@
             <dl class="border-b border-b-gray mx-7">
               <!-- Question 4 -->
               <dt
-                id="question"
-                class="py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
+                class="question py-6 flex justify-between items-center text-VeryDarkBlue hover:text-SoftRed cursor-pointer"
               >
                 <span>What about other Chromium browsers?</span>
                 <ion-icon
-                  id="chevron-icon"
                   name="chevron-down-outline"
-                  class="text-SoftBlue"
+                  class="chevron-icon text-SoftBlue"
                   style="font-size: 24px"
                 ></ion-icon>
               </dt>
               <!-- Answer 4 -->
-              <dd
-                id="answer"
-                class="hidden text-GrayishBlue leading-loose pb-8"
-              >
+              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
                 placerat mi, at euismod dui. Aliquam vitae neque eget nisl
                 gravida pellentesque non ut velit.

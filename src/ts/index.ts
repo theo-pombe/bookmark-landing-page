@@ -6,7 +6,7 @@ menuBtn.addEventListener("click", () => {
   bodyOnMobile.classList.toggle("is-mobile");
 
   const menuIcons = document.querySelectorAll(
-    "#menu-icon"
+    ".menu-icon"
   ) as NodeListOf<HTMLSpanElement>;
   menuIcons.forEach((icon) => {
     icon.classList.toggle("bg-black");
@@ -16,13 +16,13 @@ menuBtn.addEventListener("click", () => {
 
 // FAQ Accordion
 const answers = document.querySelectorAll(
-  "#answer"
+  ".answer"
 ) as NodeListOf<HTMLDListElement>;
 const questions = document.querySelectorAll(
-  "#question"
+  ".question"
 ) as NodeListOf<HTMLDListElement>;
 const chevronIcons = document.querySelectorAll(
-  "#chevron-icon"
+  ".chevron-icon"
 ) as NodeListOf<HTMLDivElement>;
 
 questions.forEach((question, index) => {
@@ -49,10 +49,10 @@ questions.forEach((question, index) => {
 
 // Features navigation tabs
 const tab_btns = document.querySelectorAll(
-  "#tab_btn"
+  ".tab_btn"
 ) as NodeListOf<HTMLButtonElement>;
 const features = document.querySelectorAll(
-  "#feature"
+  ".feature"
 ) as NodeListOf<HTMLDivElement>;
 
 tab_btns.forEach((tab, index) => {
