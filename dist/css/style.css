@@ -582,6 +582,10 @@ video {
   z-index: -10;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .m-1{
   margin: 0.25rem;
 }
@@ -710,6 +714,11 @@ video {
 
 .flex-1{
   flex: 1 1 0%;
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -1216,10 +1225,6 @@ video {
   border-width: 2px;
 }
 
-.group.is-success .group-\[\.is-success\]\:border-r{
-  border-right-width: 1px;
-}
-
 .group.is-error .group-\[\.is-error\]\:border-SoftRed{
   --tw-border-opacity: 1;
   border-color: hsl(0 94% 66% / var(--tw-border-opacity));
@@ -1230,19 +1235,14 @@ video {
   border-color: rgb(250 250 250 / var(--tw-border-opacity));
 }
 
-.group.is-success .group-\[\.is-success\]\:border-SoftRed{
-  --tw-border-opacity: 1;
-  border-color: hsl(0 94% 66% / var(--tw-border-opacity));
-}
-
-.group.is-success .group-\[\.is-success\]\:border-SoftBlue{
-  --tw-border-opacity: 1;
-  border-color: hsl(231 69% 60% / var(--tw-border-opacity));
-}
-
 .group.is-success .group-\[\.is-success\]\:border-VeryDarkBlue{
   --tw-border-opacity: 1;
   border-color: hsl(229 31% 21% / var(--tw-border-opacity));
+}
+
+.group.is-error .group-\[\.is-error\]\:bg-SoftRed{
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 94% 66% / var(--tw-bg-opacity));
 }
 
 .group.is-mobile .group-\[\.is-mobile\]\:bg-VeryDarkBlue{
@@ -1255,44 +1255,13 @@ video {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
-.group.is-success .group-\[\.is-success\]\:bg-SoftBlue{
-  --tw-bg-opacity: 1;
-  background-color: hsl(231 69% 60% / var(--tw-bg-opacity));
-}
-
-.group.is-error .group-\[\.is-error\]\:bg-SoftRed{
-  --tw-bg-opacity: 1;
-  background-color: hsl(0 94% 66% / var(--tw-bg-opacity));
-}
-
 .group.is-success .group-\[\.is-success\]\:bg-VeryDarkBlue{
   --tw-bg-opacity: 1;
   background-color: hsl(229 31% 21% / var(--tw-bg-opacity));
 }
 
-.group.is-success .group-\[\.is-success\]\:bg-\[VeryDarkBlue\]{
-  background-color: VeryDarkBlue;
-}
-
-.group.is-success .group-\[\.is-success\]\:bg-\[\]{
-  background-color: ;
-}
-
-.group.is-success .group-\[\.is-success\]\:bg-\[\'green\'\]{
-  background-color: 'green';
-}
-
-.group.is-success .group-\[\.is-success\]\:bg-\[green\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 128 0 / var(--tw-bg-opacity));
-}
-
 .group.is-mobile .group-\[\.is-mobile\]\:bg-opacity-90{
   --tw-bg-opacity: 0.9;
-}
-
-.group.is-success .group-\[\.is-success\]\:bg-opacity-70{
-  --tw-bg-opacity: 0.7;
 }
 
 .group.is-mobile .group-\[\.is-mobile\]\:pt-28{
