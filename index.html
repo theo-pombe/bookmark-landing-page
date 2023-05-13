@@ -139,7 +139,7 @@
           <!-- Hero Content -->
           <article class="flex flex-col gap-y-8 px-3">
             <div
-              class="flex flex-col items-center gap-6 text-center md:items-start md:text-start"
+              class="flex flex-col items-center gap-6 text-center animate-fade-out md:items-start md:text-start"
             >
               <h1
                 class="text-3xl text-VeryDarkBlue leading-snug font-medium max-w-sm"
@@ -220,9 +220,9 @@
         <div class="px-8">
           <!-- Feature 1 -->
           <article
-            class="feature flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
+            class="feature flex flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between lg:gap-y-32 relative"
           >
-            <div class="md:w-1/2 lg:-mt-14">
+            <div class="md:w-1/2 lg:-mt-14 animate-fade">
               <img
                 src="./images/illustration-features-tab-1.svg"
                 alt="Bookmark in one click"
@@ -234,7 +234,7 @@
             </div>
 
             <div
-              class="flex flex-col items-center gap-y-3 text-center md:items-start md:text-start md:ms-16 lg:ms-0"
+              class="flex flex-col items-center gap-y-3 text-center animate-fade-out md:items-start md:text-start md:ms-16 lg:ms-0"
             >
               <h3 class="text-2xl text-VeryDarkBlue font-medium">
                 Bookmark in one click
@@ -258,7 +258,7 @@
           <article
             class="feature hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
-            <div class="md:w-1/2 lg:-mt-14">
+            <div class="md:w-1/2 lg:-mt-14 animate-fade">
               <img
                 src="./images/illustration-features-tab-2.svg"
                 alt="Intelligent search"
@@ -270,7 +270,7 @@
             </div>
 
             <div
-              class="flex flex-col items-center gap-y-3 text-center md:items-start md:text-start md:ms-16 lg:ms-0"
+              class="flex flex-col items-center gap-y-3 text-center animate-fade-out md:items-start md:text-start md:ms-16 lg:ms-0"
             >
               <h3 class="text-2xl text-VeryDarkBlue font-medium">
                 Intelligent search
@@ -293,7 +293,7 @@
           <article
             class="feature hidden flex-col items-center gap-y-24 md:flex-row md:items-start md:justify-between relative"
           >
-            <div class="md:w-1/2 lg:-mt-14">
+            <div class="md:w-1/2 lg:-mt-14 animate-fade">
               <img
                 src="./images/illustration-features-tab-3.svg"
                 alt="Share your bookmarks"
@@ -305,7 +305,7 @@
             </div>
 
             <div
-              class="flex flex-col items-center gap-y-3 text-center md:items-start md:text-start md:ms-16 lg:ms-0"
+              class="flex flex-col items-center gap-y-3 text-center animate-fade-out md:items-start md:text-start md:ms-16 lg:ms-0"
             >
               <h3 class="text-2xl text-VeryDarkBlue font-medium">
                 Share your bookmarks
@@ -346,7 +346,7 @@
         >
           <!-- Feature #1 -->
           <article
-            class="shadow-xl rounded-lg py-6 min-w-[300px] md:mb-32 lg:mb-16"
+            class="shadow-xl rounded-lg py-6 min-w-[300px] transition-all hover:transform hover:scale-110 md:mb-32 lg:mb-16"
           >
             <!-- Image -->
             <div class="flex justify-center mb-8">
@@ -379,7 +379,7 @@
 
           <!-- Feature #2 -->
           <article
-            class="shadow-xl rounded-lg py-6 min-w-[300px] md:mt-32 lg:my-8"
+            class="shadow-xl rounded-lg py-6 min-w-[300px] transition-all hover:transform hover:scale-110 md:mt-32 lg:my-8"
           >
             <!-- Image -->
             <div class="flex justify-center mb-8">
@@ -412,7 +412,7 @@
 
           <!-- Feature #3 -->
           <article
-            class="shadow-xl rounded-lg py-6 min-w-[300px] md:-mt-24 lg:mt-16"
+            class="shadow-xl rounded-lg py-6 min-w-[300px] transition-all hover:transform hover:scale-110 md:-mt-24 lg:mt-16"
           >
             <!-- Image -->
             <div class="flex justify-center mb-8">
@@ -479,7 +479,9 @@
                 ></ion-icon>
               </dt>
               <!-- Answer 1 -->
-              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
                 tincidunt justo eget ultricies fringilla. Phasellus blandit
                 ipsum quis quam ornare mattis.
@@ -503,7 +505,9 @@
               </dt>
 
               <!-- Answer 2 -->
-              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
                 Vivamus luctus eros aliquet convallis ultricies. Mauris augue
                 massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
                 luctus eros aliquet convallis ultricies. Mauris augue massa,
@@ -529,7 +533,9 @@
                 ></ion-icon>
               </dt>
               <!-- Answer 3 -->
-              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
                 Sed consectetur quam id neque fermentum accumsan. Praesent
                 luctus vestibulum dolor, ut condimentum urna vulputate eget.
                 Cras in ligula quis est pharetra mattis sit amet pharetra purus.
@@ -553,7 +559,9 @@
                 ></ion-icon>
               </dt>
               <!-- Answer 4 -->
-              <dd class="answer hidden text-GrayishBlue leading-loose pb-8">
+              <dd
+                class="answer hidden text-GrayishBlue leading-loose pb-8 animate-collapse"
+              >
                 Integer condimentum ipsum id imperdiet finibus. Vivamus in
                 placerat mi, at euismod dui. Aliquam vitae neque eget nisl
                 gravida pellentesque non ut velit.
@@ -606,7 +614,7 @@
               <div>
                 <button
                   type="submit"
-                  class="w-full p-3 bg-SoftRed text-white font-medium rounded-md shadow-md border-2 border-transparent hover:border-2 hover:border-SoftRed hover:bg-white hover:text-SoftRed md:p-2"
+                  class="w-full p-3 bg-SoftRed text-white font-medium rounded-md shadow-md border-2 border-transparent transition ease-in-out delay-200 hover:border-2 hover:border-SoftRed hover:bg-white hover:text-SoftRed md:p-2"
                 >
                   Contact Us
                 </button>
