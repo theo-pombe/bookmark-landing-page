@@ -41,8 +41,8 @@ For this challenge:
 
 ### Links
 
-- [Solution](https://your-solution-url.com) submitted
-- Preview [Live Site](https://theo-pombe.github.io/bookmark-landing-page/)
+- [Solution](https://www.frontendmentor.io/solutions/mobilefirst-design-landing-page-using-tailwind-and-typescript-TUaPRdFHJM) submitted
+- Preview [Live Site](https://the-bookmark-landing-page.netlify.app/)
 - clone this project [https://github.com/theo-pombe/bookmark-landing-page.git](https://github.com/theo-pombe/bookmark-landing-page.git)
 
 ## My process
